@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {View,Text,StyleSheet,TextInput,FlatList,ActivityIndicator,SafeAreaView, ScrollView, TouchableOpacity} from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
-export const HomeScreen = ({ navigation }) => {
+export const UbicacionesScreen = ({ navigation }) => {
     const [text,setText] = useState('');
     const [email,setEmail] = useState('');
     const [visibleTextOne,setVisibleTextOne] = useState('none');
@@ -18,6 +18,8 @@ export const HomeScreen = ({ navigation }) => {
         { id: '5', name: 'Elemento 5' },
     ]
 
+ 
+
     const ElementList = (item) => {
         return (
             <View style={{ padding: 10, borderBottomWidth: 1, borderBottomColor: '#ccc' }}>
@@ -29,7 +31,7 @@ export const HomeScreen = ({ navigation }) => {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
-                <Text style ={{color: 'red'}}>Estas en home esp</Text>
+                <Text style ={{color: 'red'}}>Estas en UBICACIONES esp</Text>
 
                 <View style={styles.containerEmailAndUsername}>
                     <View>
@@ -98,7 +100,7 @@ export const HomeScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        margin: 15
+        margin: 15,
     },
     text: {
         fontSize: 14,
