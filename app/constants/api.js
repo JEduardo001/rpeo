@@ -1,0 +1,1 @@
+export const apiUrl = 'https://varita-magica.ngrok.io/DAC/api'

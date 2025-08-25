@@ -14,19 +14,35 @@
     },
     "ios": {
       "infoPlist": {
-        "NSLocationWhenInUseUsageDescription": "Necesitamos acceso a la ubicación."
+        "NSLocationWhenInUseUsageDescription": "Necesitamos acceso a la ubicación.",
+        "ITSAppUsesNonExemptEncryption": false
       },
-      "supportsTablet": true
+      "config": {
+        "googleMapsApiKey": "AIzaSyCGDrzamj9PtjSqaaYs-azywgAmIrFEqj4"
+      },
+      "supportsTablet": true,
+      "bundleIdentifier": "com.gbbcs.pgjeapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCGDrzamj9PtjSqaaYs-azywgAmIrFEqj4"
+        }
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.gbbcs.pgjeapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "44beb569-f399-4821-a0e5-7eda32b9b2a6"
+      }
     }
   }
 }
